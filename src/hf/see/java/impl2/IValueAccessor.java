@@ -20,10 +20,10 @@ class PreDefinedValueAccessors
 	/**
 	 * Gibt die Punkte eines Messobjekts zurück
 	 */
-	private static IValueAccessor byPoints = new IValueAccessor() {
+	private static IValueAccessor byScore = new IValueAccessor() {
 		@Override
 		public int getValue(IMeasurable result) {
-			return result.getPoints();
+			return result.getScore();
 		}
 	};
 	
@@ -37,9 +37,9 @@ class PreDefinedValueAccessors
 		}
 	};
 	
-	public static IValueAccessor byPoints()
+	public static IValueAccessor byScore()
 	{
-		return byPoints;
+		return byScore;
 	}
 	
 	

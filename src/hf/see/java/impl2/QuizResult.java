@@ -8,7 +8,7 @@ public class QuizResult implements IMeasurable {
 		this.Points = Points;
 		this.Name = Name;
 	}
-	public int getPoints() {
+	public int getScore() {
 		return Points;
 	}
 	public String getName() {
