@@ -1,9 +1,8 @@
 package hf.see.java.impl2;
 
 /**
- * Methoden die Berechnungen mit den Messobjekten durchführen, können mithilfe dieses Interfaces Werte abfragen
- * Ähnlich dem Command-Pattern
- * @author Elia Seikritt
+ * Methoden die Berechnungen mit den Messobjekten durchfÃ¼hren, kÃ¶nnen mithilfe dieses Interfaces Werte abfragen
+ * Ã„hnlich dem Command-Pattern
  *
  */
 interface IValueAccessor {
@@ -11,14 +10,13 @@ interface IValueAccessor {
 }
 
 /**
- * Enthält mögliche Implementationen von IValueAccessor
- * @author Elia Seikritt
+ * EnthÃ¤lt mÃ¶gliche Implementationen von IValueAccessor
  *
  */
 class PreDefinedValueAccessors
 {
 	/**
-	 * Gibt die Punkte eines Messobjekts zurück
+	 * Gibt die Punkte eines Messobjekts zurÃ¼ck
 	 */
 	private static IValueAccessor byScore = new IValueAccessor() {
 		@Override
@@ -28,7 +26,7 @@ class PreDefinedValueAccessors
 	};
 	
 	/**
-	 * Gibt die Stringlänge des Namens eines Messobjekts zurück
+	 * Gibt die StringlÃ¤nge des Namens eines Messobjekts zurÃ¼ck
 	 */
 	private static IValueAccessor byNameLen = new IValueAccessor() {
 		@Override
